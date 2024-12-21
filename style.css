@@ -1,0 +1,151 @@
+.container{
+    margin: 100px 0 0 200px;
+    width: 70%;
+    height: 450px;
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+}
+.container img{
+    width: 10%;
+    height: 70%;
+    object-fit: cover;
+    border-radius: 10px;
+    border: 2px solid rgba(red, green, blue, alpha);
+    transition: all ease-in ease-out 0.5s;
+}
+.container img:hover{
+
+  width: 25%;
+
+}
+
+
+label{
+                font: size 80px;
+                font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif  ;
+                ; color: black;
+            }
+            form{height: fit-content;background-color: #fafafa; justify-content: center;margin-top: 10px;margin-bottom: 10px;margin-left: 400px;
+                background-color: beige;
+                width: 400px;
+                height: 250px;
+                 align-content: center;
+                 text-align: center;
+
+            }
+            h1{
+              color: rgb(235, 234, 232);font-family: 'Gill Sans', 'Gill npm Sans MT', Calibri, 'Trebuchet MS';text-align: center;text-decoration:double;text-transform: none;text-overflow: ellipsis;padding: 50px;font-size: 50px;
+            }
+            li{
+              list-style: none; display: inline;margin-right: 30px;margin: top 80px;;font-size: 10px; font-weight: bold;font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;margin-top: 100px;position: relative;top: 50px;left:250px;text-decoration: underline;
+
+            }
+            .dropdown {
+  position: relative;
+  display: inline-block;
+}
+
+.dropdown-content {
+  display: none;
+  position: absolute;
+  background-color: #f9f9f9;
+  min-width: 160px;
+  box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+  padding: 12px 16px;
+  z-index: 1;
+}
+
+.dropdown:hover .dropdown-content {
+  display: block;
+}
+.widget-container {
+  background-color: bisque;
+  padding: 30px;
+  border-radius: 15px;
+  box-shadow: 0 5px 20px rgba(0, 0, 0, 0.1);
+  width: 300px;
+  text-align: center;
+  font-size: 18px;
+  transition: all 0.3s ease;
+  overflow: hidden;
+}
+.graph-container {
+  display: flex;
+  align-items: flex-end;
+  height: 400px; /* Height of the graph */
+  width: 80%; /* Width of the graph */
+  margin: 50px auto;
+  border-left: 2px solid #333; /* Left border for the Y-axis */
+  border-bottom: 2px solid #333; /* Bottom border for the X-axis */
+  padding: 20px;
+  box-sizing: border-box;
+  position: relative;
+  background: linear-gradient(145deg, #eb6363b6, #e76c6c95); /* Light gradient background */
+  border-radius: 10px; /* Rounded corners */
+}
+
+/* Style for individual bars */
+.bar {
+  width: 40px; /* Width of each bar */
+  margin: 0 15px;
+  background: linear-gradient(to top, #4CAF50, #2E8B57); /* Gradient color for bars */
+  border-radius: 5px;
+  position: relative;
+  transition: height 0.3s ease-out, transform 0.3s ease;
+}
+
+.bar:hover {
+  transform: scale(1.1); /* Slight scaling on hover */
+  background: linear-gradient(to top, #32CD32, #228B22); /* Change color on hover */
+}
+
+/* Set heights based on population data (in millions) */
+.bar1 { height: 100px; }
+.bar2 { height: 110px; }
+.bar3 { height: 115px; }
+.bar4 { height: 120px; }
+.bar5 { height: 122px; }
+.bar6 { height: 123px; }
+.bar7 { height: 122px; }
+.bar8 { height: 124px; }
+.bar9 { height: 127px; }
+.bar10 { height: 130px; }
+
+/* Labels inside the bars */
+.bar-label {
+  position: absolute;
+  bottom: 100%; /* Position the label above the bar */
+  width: 100%;
+  text-align: center;
+  font-size: 14px;
+  font-weight: bold;
+  color: #000000;
+  padding-bottom: 5px;
+}
+
+/* Labels below the graph */
+.x-axis-labels {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 20px;
+  font-size: 14px;
+  font-weight: bold;
+  color: #333;
+}
+
+.x-axis-label {
+  text-align: center;
+  width: 40px;
+}
+
+/* Y-axis label */
+.y-axis-label {
+  position: absolute;
+  top: 50%;
+  left: -40px;
+  transform: translateY(-50%);
+  font-size: 16px;
+  font-weight: bold;
+  color: #333;
+}
